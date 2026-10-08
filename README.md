@@ -44,9 +44,8 @@ Using Active Directory Users and Computers, I created two Global Security Groups
 
 I assigned the appropriate domain users to each group to manage departmental access.
 
-**Screenshot:**
-
-<!-- Insert AD security groups screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 7 59 58 PM" src="https://github.com/user-attachments/assets/840bf4e8-a786-4ae3-a09d-7503d1e8c995" />
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 00 16 PM" src="https://github.com/user-attachments/assets/481eb6f8-e979-4d2f-a98c-38711965b9a3" />
 
 ---
 
@@ -62,10 +61,8 @@ C:\CompanyShares
 
 These folders serve as shared storage locations for authorized employees.
 
-**Screenshot:**
 
-<!-- Insert shared folders screenshot here -->
-
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 01 52 PM" src="https://github.com/user-attachments/assets/90c412dc-48be-485e-b4ac-ce97ebc02a8f" />
 ---
 
 ## Step 3: Configure NTFS Permissions
@@ -80,9 +77,9 @@ I configured NTFS permissions to restrict folder access based on Active Director
 
 This configuration allows authorized employees to access and modify their department's files while restricting unauthorized access.
 
-**Screenshot:**
 
-<!-- Insert NTFS permissions screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 18 00 PM" src="https://github.com/user-attachments/assets/f5f236d9-2800-4500-a6e5-e54d571f612e" />
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 18 28 PM" src="https://github.com/user-attachments/assets/c02498a0-0a1c-4d92-8de7-411bee97de36" />
 
 ---
 
@@ -101,7 +98,8 @@ Each share was configured to allow access to its corresponding Active Directory 
 
 **Screenshot:**
 
-<!-- Insert Advanced Sharing permissions screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 22 10 PM" src="https://github.com/user-attachments/assets/33789d6b-ff62-4200-b238-429aa8602f81" />
+<img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 22 53 PM" src="https://github.com/user-attachments/assets/ef2df919-24e7-4cb6-b7b0-958466d8231f" />
 
 ---
 
