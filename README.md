@@ -96,85 +96,10 @@ Network share paths:
 
 Each share was configured to allow access to its corresponding Active Directory security group.
 
-**Screenshot:**
+
 
 <img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 22 10 PM" src="https://github.com/user-attachments/assets/33789d6b-ff62-4200-b238-429aa8602f81" />
 <img width="1470" height="956" alt="Screenshot 2026-10-07 at 8 22 53 PM" src="https://github.com/user-attachments/assets/ef2df919-24e7-4cb6-b7b0-958466d8231f" />
-
----
-
-## Step 5: Test User Access
-
-Using the Windows 10 Enterprise domain-joined client, I tested access with two domain accounts.
-
-**IT User — jsmith**
-
-- Successfully accessed `\\SERVER01\IT`
-- Created `IT-Test.txt`
-- Verified that access to the HR folder was restricted
-
-**HR User — sjohnson**
-
-- Successfully accessed `\\SERVER01\HR`
-- Created `HR-Test.txt`
-- Verified that access to the IT folder was restricted
-
-These tests demonstrated that folder permissions were enforced according to group membership.
-
-**Screenshot:**
-
-<!-- Insert successful access and Access Denied screenshots here -->
-
----
-
-## Step 6: Map a Network Drive
-
-I mapped the authorized departmental share to a network drive on Windows 10.
-
-Example command:
-
-```cmd
-net use Z: \\SERVER01\HR /persistent:yes
-```
-
-I verified the mapped drive using:
-
-```cmd
-net use
-```
-
-This demonstrated how employees can access shared network resources through mapped drives.
-
-**Screenshot:**
-
-<!-- Insert mapped network drive screenshot here -->
-
----
-
-## Step 7: Troubleshoot File Access Permissions
-
-To simulate a common IT support issue, I temporarily removed a user from their departmental security group.
-
-I used the following command to investigate the user's group membership:
-
-```cmd
-whoami /groups
-```
-
-After identifying the missing group membership, I restored the user to the correct security group and refreshed the user's logon session.
-
-I then verified that access to the shared folder was restored.
-
-**Troubleshooting Summary**
-
-- **Issue:** User could not access their departmental shared folder.
-- **Root Cause:** User was missing the required Active Directory security group membership.
-- **Resolution:** Restored the correct group membership and refreshed the user's logon session.
-- **Verification:** Confirmed successful access to the shared folder.
-
-**Screenshot:**
-
-<!-- Insert troubleshooting screenshot here -->
 
 ---
 
